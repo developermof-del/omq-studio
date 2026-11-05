@@ -1,0 +1,23 @@
+OMQ Identity - Font sources
+Downloaded 2026-11-03.
+
+IBM Plex Sans Arabic Regular / Medium / SemiBold / Bold
+Source: https://github.com/google/fonts/tree/main/ofl/ibmplexsansarabic
+License: OFL-Arabic.txt (SIL Open Font License 1.1)
+
+IBM Plex Sans Regular / Medium / SemiBold
+Source: https://github.com/IBM/plex/tree/master/packages/plex-sans
+License: OFL-Sans.txt (SIL Open Font License 1.1)
+
+IBM Plex Mono Regular
+Source: https://github.com/google/fonts/tree/main/ofl/ibmplexmono
+License: OFL-Mono.txt (SIL Open Font License 1.1)
+
+The fonts are unmodified and are supplied for editable surrounding text.
+Wordmark v3.0: the OMQ Arabic logotype reconstructs the chosen illustrated
+typographic concept as vector contours. It is not set with the IBM Plex
+fonts. No font is needed to display it. See logos/OMQ_Logo_Specification.json.
+The bundled IBM Plex typefaces serve the surrounding editorial text and interface.
+
+Font files may be bundled with their accompanying copyright and license notices.
+Please retain those files when redistributing the fonts.

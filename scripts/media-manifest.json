@@ -1,0 +1,302 @@
+[
+  {
+    "path": "site/assets/downloads/brand-guide.pdf",
+    "size": 5028695,
+    "sha256": "530b2e93b245171751e8c9068ff88a92094f17e2a7948e0ffc6a761112e7178e"
+  },
+  {
+    "path": "site/assets/downloads/identity-01.bin",
+    "size": 8388608,
+    "sha256": "ba7c5d121e19403662d0a903aa75c1138c28028db97c041459c6fa0546ba9296"
+  },
+  {
+    "path": "site/assets/downloads/identity-02.bin",
+    "size": 8388608,
+    "sha256": "71f99310e1acb76d09697a3ff4d2f78be0fbbfdad5356891123901ee5930efcb"
+  },
+  {
+    "path": "site/assets/downloads/identity-03.bin",
+    "size": 8388608,
+    "sha256": "f9454fade328ce4d05941fd5f1022bf899f43dd00027e3105602b45f56ebb8a8"
+  },
+  {
+    "path": "site/assets/downloads/identity-04.bin",
+    "size": 8388608,
+    "sha256": "fb289b83831ac6ee2807347bd9bbb3299321167fbb617904e649d754dd6a4ef8"
+  },
+  {
+    "path": "site/assets/downloads/identity-05.bin",
+    "size": 8388608,
+    "sha256": "be95b900fac5a1fd6578eb456fdcd1f6009b6bfd8cb7ed5e47c101f87582cfbe"
+  },
+  {
+    "path": "site/assets/downloads/identity-06.bin",
+    "size": 8388608,
+    "sha256": "bce886143b27614786ff23b992edb656775aa35f0a542993080537ef07a8700e"
+  },
+  {
+    "path": "site/assets/downloads/identity-07.bin",
+    "size": 962246,
+    "sha256": "dde24410aa2e4d6458431102839512d0722ca3c944c27aad1075b305fb042659"
+  },
+  {
+    "path": "site/assets/downloads/motion-kit.zip",
+    "size": 8160090,
+    "sha256": "1e0a5d273bb1d02d93362895f16dfde570d9c7249afeae970155fbbca62025d2"
+  },
+  {
+    "path": "site/assets/downloads/social-01.bin",
+    "size": 8388608,
+    "sha256": "28516719d54a3e051958d932982bc4df8f4c71e4893da75bc87b2221a33f49dd"
+  },
+  {
+    "path": "site/assets/downloads/social-02.bin",
+    "size": 8388608,
+    "sha256": "19e61e364027c18f0f841caa587dc98c7399c1f3882f51a8db1df4904af477b0"
+  },
+  {
+    "path": "site/assets/downloads/social-03.bin",
+    "size": 8388608,
+    "sha256": "1a4a1300c64d36ff1709752af4b11773a812379352871c7c64662f34b254c5ee"
+  },
+  {
+    "path": "site/assets/downloads/social-04.bin",
+    "size": 8388608,
+    "sha256": "c03b67b70e0380cfacca15c5592b779ebb3536091e2593d1e09527464948c866"
+  },
+  {
+    "path": "site/assets/downloads/social-05.bin",
+    "size": 8388608,
+    "sha256": "d8003f715b0dd109801a5a9bda36e2bf7bce2df630520874fd4ba5486c919c6a"
+  },
+  {
+    "path": "site/assets/downloads/social-06.bin",
+    "size": 8388608,
+    "sha256": "7c8bebb199702285d74700d78c9b928231db17fe2ccfa3ad0b3deacf52926972"
+  },
+  {
+    "path": "site/assets/downloads/social-07.bin",
+    "size": 463481,
+    "sha256": "cdfedb52f55a88a3fd50bb20746ab2ea240df309cbb48c2e833206d5f12e237d"
+  },
+  {
+    "path": "site/assets/downloads/social-guide.pdf",
+    "size": 4970305,
+    "sha256": "af12de49ca02030c7210e8567529274172a808c37067aa827f5812095530187e"
+  },
+  {
+    "path": "site/assets/favicon.png",
+    "size": 22457,
+    "sha256": "627d34b9d48220d91ecc3ba92e17b5cb0ae44301d8c214c8d4fe529807952356"
+  },
+  {
+    "path": "site/assets/fonts/IBMPlexMono-Regular.woff",
+    "size": 56576,
+    "sha256": "1b1b603d33d4687aeab8563049cfbb0c6e07a81347fb18d86b90d7a85b75f266"
+  },
+  {
+    "path": "site/assets/fonts/IBMPlexSans-Regular.woff",
+    "size": 87604,
+    "sha256": "59b14d7903062825cc2f5cf26a8114feb8c2397af0bffefead30cd74df242487"
+  },
+  {
+    "path": "site/assets/fonts/IBMPlexSansArabic-Bold.woff",
+    "size": 103944,
+    "sha256": "064424e72b1dd94d21f9a44b799e88e41c6963a778f02b05485811f81365cb13"
+  },
+  {
+    "path": "site/assets/fonts/IBMPlexSansArabic-Medium.woff",
+    "size": 106012,
+    "sha256": "94e3b4e0bc0e1c6bff9bcbda43059e3dd886ebe88af537db6f1ab99950a9c6df"
+  },
+  {
+    "path": "site/assets/fonts/IBMPlexSansArabic-Regular.woff",
+    "size": 101548,
+    "sha256": "53c7eeb7a61e1f203bc25fe12082ccf8361f03cd2c3d315dc255b2f9a34c4687"
+  },
+  {
+    "path": "site/assets/fonts/IBMPlexSansArabic-SemiBold.woff",
+    "size": 106428,
+    "sha256": "bb247e3143a5541458a2d617f17f83aa43a52a55dc62d84d67523324bf3a8ccb"
+  },
+  {
+    "path": "site/assets/images/brand-motion-poster.webp",
+    "size": 6692,
+    "sha256": "a500c27ad23d2703c7b7cddde9805aecafb2c430bf5f6e58f8253f850e460127"
+  },
+  {
+    "path": "site/assets/images/clay.webp",
+    "size": 171230,
+    "sha256": "45d8cc56c3343a8440923a7b0aacce63e03c70a8572f544cea58b4aac3ab545b"
+  },
+  {
+    "path": "site/assets/images/detail.webp",
+    "size": 130984,
+    "sha256": "87d55952e9d15c71b4d199f3c4a32811314752b9b287f4ec2339c2616d50e2e4"
+  },
+  {
+    "path": "site/assets/images/hero.webp",
+    "size": 66248,
+    "sha256": "9a12e9e522fc04745ed8bb5dc7d150e40a6a9b1fbb992e210a6cf6bb958bdf7b"
+  },
+  {
+    "path": "site/assets/images/label.webp",
+    "size": 19144,
+    "sha256": "8e5e77a7ed156d900a90d557c6210c87c0bb60f8d5514759e232cc5eeef0a43d"
+  },
+  {
+    "path": "site/assets/images/packaging.webp",
+    "size": 16560,
+    "sha256": "8b23c7ab7b7525ed36b496da09353d8edae7dcf622836c3a1410c6128d327c00"
+  },
+  {
+    "path": "site/assets/images/salla.webp",
+    "size": 31082,
+    "sha256": "755872ec595b32a3d5b468db93260b913f7df74d4ecf90a83b3086f85ae68b4d"
+  },
+  {
+    "path": "site/assets/images/scale.webp",
+    "size": 85082,
+    "sha256": "764123f6525d380d8d71afcdd4eaebcc62515889b902187808518779852c731f"
+  },
+  {
+    "path": "site/assets/images/scene.webp",
+    "size": 153738,
+    "sha256": "578a95d3f668cbde83b4f296fe63db0b44976de8b12f972ef64c5c3ff7542a40"
+  },
+  {
+    "path": "site/assets/images/social.webp",
+    "size": 110966,
+    "sha256": "5359b767f79e16a56b50e44d3d7486de231c318da529532aa083105c8bf43c2a"
+  },
+  {
+    "path": "site/assets/images/workshop.webp",
+    "size": 136254,
+    "sha256": "ee04b4a5b47909dd9daa2436c77678e2b843cccd326447982afd55f7037d0bc2"
+  },
+  {
+    "path": "site/assets/motion.mp4",
+    "size": 123471,
+    "sha256": "34fe338bff7abb278bff9a95b68de96e197d4df12e1044a698e24ce9cce41873"
+  },
+  {
+    "path": "site/assets/social/content-behance.webp",
+    "size": 51232,
+    "sha256": "db4a6fbab95fb4aa503ebf340c20d9f5804a358a50e1a095cb43bc0f7a286547"
+  },
+  {
+    "path": "site/assets/social/content-facebook.webp",
+    "size": 50248,
+    "sha256": "a44974e3d2629ae6e369d55b677aa5e86f2bedcdf437b4726704077a99c4cdfc"
+  },
+  {
+    "path": "site/assets/social/content-instagram.webp",
+    "size": 57666,
+    "sha256": "29dc775d361cf31ec762406e0ae52142919bf7ce92b7ce3aeb0e78f937ffd6de"
+  },
+  {
+    "path": "site/assets/social/content-linkedin.webp",
+    "size": 40382,
+    "sha256": "281f9e85295c064f6d0613afd0e9a372e4828ca6530195c6bcb451e48255e4e7"
+  },
+  {
+    "path": "site/assets/social/content-pinterest.webp",
+    "size": 37682,
+    "sha256": "d3735ad0178325f8659c534f2fc814dbbbd80f5396d4b1e9cd381e1bdf219965"
+  },
+  {
+    "path": "site/assets/social/content-snapchat.webp",
+    "size": 47162,
+    "sha256": "911b7b43088cdf9cc9e6103d183c91876765315d5f74e94989159d68f2e80a71"
+  },
+  {
+    "path": "site/assets/social/content-telegram.webp",
+    "size": 38598,
+    "sha256": "500baae7d67f105efbc9b203449ebd436d8f807d0e6c1f003007078c5f896b5d"
+  },
+  {
+    "path": "site/assets/social/content-threads.webp",
+    "size": 39250,
+    "sha256": "e49a2673fe6b737321947c52371920f62e9f74d074fd688322d46536864618fb"
+  },
+  {
+    "path": "site/assets/social/content-tiktok.webp",
+    "size": 62738,
+    "sha256": "a0c17adeb248552288c733912a5eced5d17115a36802fb190d10b16d31a7a74e"
+  },
+  {
+    "path": "site/assets/social/content-whatsapp.webp",
+    "size": 33904,
+    "sha256": "e47a18dc8ed8ca6287d95949430e0ed5c79a6fe7d463bbda698563495769c20c"
+  },
+  {
+    "path": "site/assets/social/content-x.webp",
+    "size": 41448,
+    "sha256": "2ea2f5a593a687ce25d07b6289240d29b7e4f8e803ae0435cf66df63746ca737"
+  },
+  {
+    "path": "site/assets/social/content-youtube.webp",
+    "size": 38754,
+    "sha256": "f0631807664184b64266052420d8b3726f3646af697c0c4f235cb0f4fd82d777"
+  },
+  {
+    "path": "site/assets/social/profiles-behance.webp",
+    "size": 42974,
+    "sha256": "ea7685bf7f6f7cee19e93d69dde46fe2f172d6c3a6166416d0ccdac466a10471"
+  },
+  {
+    "path": "site/assets/social/profiles-facebook.webp",
+    "size": 46086,
+    "sha256": "13c61de421fdfad5bbbf0f8d9b1629a2c679c6b1c50c2c56348f0f278c2e54b9"
+  },
+  {
+    "path": "site/assets/social/profiles-instagram.webp",
+    "size": 52870,
+    "sha256": "bb5d270f154dd500a45318ec4921b0e7f36eac30fe76d1cedde96a070815a13d"
+  },
+  {
+    "path": "site/assets/social/profiles-linkedin.webp",
+    "size": 41030,
+    "sha256": "b3477c1ddd94fb2cf42d69091ede2423216f58fd4eabea19bdd541798b89d277"
+  },
+  {
+    "path": "site/assets/social/profiles-pinterest.webp",
+    "size": 49208,
+    "sha256": "736a6a585edae7494061ef0e78e68a6ba9197ab0f0b5cd5f281833248233be95"
+  },
+  {
+    "path": "site/assets/social/profiles-snapchat.webp",
+    "size": 45290,
+    "sha256": "bf879e61e73b176d96fb1184df27b4f1d946247b9782f6b275784e246dbce3aa"
+  },
+  {
+    "path": "site/assets/social/profiles-telegram.webp",
+    "size": 34356,
+    "sha256": "5caca20472454f9332e1378d9bca9839c4df8e749f0b33ddd5c1bbfc7e1d7452"
+  },
+  {
+    "path": "site/assets/social/profiles-threads.webp",
+    "size": 38578,
+    "sha256": "e2b71b164ca699a11d4b30323e7f6ccff9f8906504e8b0e3b78c8edfef1a2e5c"
+  },
+  {
+    "path": "site/assets/social/profiles-tiktok.webp",
+    "size": 46596,
+    "sha256": "b7f8c7dd3fbcbf2306c8fd51382b5c2e0852c474f53c8b76b108dd207ccbb61e"
+  },
+  {
+    "path": "site/assets/social/profiles-whatsapp.webp",
+    "size": 39802,
+    "sha256": "c83ebc44b7c0cd0077156f5c0090de7dc38aef8b572998663ea95f911528eeb6"
+  },
+  {
+    "path": "site/assets/social/profiles-x.webp",
+    "size": 51712,
+    "sha256": "dcb774f40cdd3715933d629219b17cb8ba7b37d4b90b934798aeddc30bde4e0c"
+  },
+  {
+    "path": "site/assets/social/profiles-youtube.webp",
+    "size": 51748,
+    "sha256": "c024fdd79215fb71070275efeafdbfe5c79ccaff7ebbe0adc3d7e3d9680be425"
+  }
+]
