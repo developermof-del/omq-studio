@@ -2,7 +2,7 @@ name: Publish OMQ studio
 on:
   push:
     branches: [main]
-    paths: ['site/**', '.github/workflows/pages.yml']
+    paths: ['site/**', '.github/workflows/pages.yml', 'scripts/check.py']
   workflow_dispatch:
 permissions:
   contents: read
@@ -10,45 +10,23 @@ concurrency:
   group: omq-pages
   cancel-in-progress: false
 jobs:
-  prepare:
+  package:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
     permissions:
-      contents: write
+      contents: read
       pages: read
     steps:
       - uses: actions/checkout@v6
-      - name: Restore the approved release on the first publication only
-        shell: python
-        run: |
-          from pathlib import Path
-          import hashlib, io, os, subprocess, time, urllib.request, zipfile
-          if Path('site/index.html').is_file(): raise SystemExit(0)
-          source='https://omq-form-studies.surprisingherb1.chatgpt.site/assets/downloads/website-source.zip'
-          expected='3c27093ea0e016ec3621880c87bc025e0fff9d3a8576c03b4bfb7f43ff49bb3c'
-          for attempt in range(45):
-              try:
-                  req=urllib.request.Request(source,headers={'User-Agent':'OMQ-Studio-Release/1','Accept-Encoding':'identity'})
-                  with urllib.request.urlopen(req,timeout=20) as res: data=res.read(100000)
-                  if len(data)==72032 and hashlib.sha256(data).hexdigest()==expected:break
-              except OSError: pass
-              if attempt==44: raise RuntimeError('The exact verified source archive was not available; nothing was published.')
-              time.sleep(8)
-          with zipfile.ZipFile(io.BytesIO(data)) as src:
-              assert all(not Path(n).is_absolute() and '..' not in Path(n).parts and not n.startswith('.git/') and not n.startswith('.github/') for n in src.namelist())
-              src.extractall('.')
-          os.chmod('scripts/publish-github.sh',0o755)
-          subprocess.run(['python3','scripts/import-media.py'],check=True)
-          subprocess.run(['python3','scripts/check.py'],check=True)
-          subprocess.run(['git','add','--','site','scripts','README.md','.gitignore'],check=True)
-          subprocess.run(['git','-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','Publish the complete verified OMQ studio website and design assets'],check=True)
-          subprocess.run(['git','push','origin','HEAD:refs/heads/main'],check=True)
+        with:
+          persist-credentials: false
+      - name: Check internal links and original download archives
+        run: python3 scripts/check.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
   deploy:
-    needs: prepare
+    needs: package
     runs-on: ubuntu-latest
     permissions:
       pages: write
