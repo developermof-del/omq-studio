@@ -14,8 +14,15 @@
   <link rel="preload" as="image" href="assets/images/clay.webp">
   <link rel="stylesheet" href="assets/common.css">
   <link rel="stylesheet" href="assets/home.css">
+  <link rel="stylesheet" href="assets/hero-motion.css">
   <script defer src="assets/common.js"></script>
-  <script defer src="assets/home.js"></script>
+  <script defer src="assets/home.js?v=2"></script>
+  <link rel="stylesheet" href="assets/lab.css">
+  <script defer src="assets/lab.js"></script>
+  <link rel="stylesheet" href="assets/page-motion.css">
+  <link rel="stylesheet" href="assets/form-study.css">
+  <script defer src="assets/page-motion.js"></script>
+  <script defer src="assets/form-study.js"></script>
 </head>
 <body>
   <header data-header><a class="omq-skip" href="#main">تخطَّ إلى المحتوى</a><div class="omq-nav-shell"><a class="omq-word" href="index.html" aria-label="عُمق، الصفحة الرئيسية"><img src="assets/logo-primary.svg" width="79" height="48" alt="عُمق"><small dir="ltr" lang="en">OMQ<br>STUDIO</small></a><button class="omq-toggle" data-menu-toggle aria-controls="main-nav" aria-expanded="false"><span aria-hidden="true">☰</span> القائمة</button><nav class="omq-menu" id="main-nav" aria-label="التصفح الرئيسي"><a href="index.html" aria-current="page">الرئيسية</a><a href="collection.html">الأعمال</a><a href="brand.html">دليل الهوية</a><a href="platforms.html">المنصات</a></nav><a class="omq-dl" href="brand.html#downloads">ملفات الهوية <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg></a></div></header>
@@ -24,18 +31,28 @@
       <div class="intro-panel">
         <div class="intro-kicker"><span aria-hidden="true"></span>استوديو للفن والتصميم</div>
         <div class="intro-copy">
-          <h1 id="home-title">فكرة تأخذ<br> <span>شكلًا<span class="title-dot">.</span></span></h1>
+          <h1 id="home-title"><span class="title-line">فكرة تأخذ</span> <span class="title-line">شكلًا<span class="title-dot">.</span></span></h1>
           <p>نصنع في «عُمق» أعمالًا فنية وقطعًا بالطباعة ثلاثية الأبعاد. تبدأ الفكرة بخطّ، وتترك كل طبقة أثرها على السطح.</p>
-          <a class="home-button" href="collection.html">اكتشف المجموعة <svg viewBox="0 0 28 20" aria-hidden="true"><path d="M26 10H3m8-8-8 8 8 8"/></svg></a>
+          <div class="hero-routes"><a class="home-button" href="collection.html">اكتشف المجموعة <svg viewBox="0 0 28 20" aria-hidden="true"><path d="M26 10H3m8-8-8 8 8 8"/></svg></a><a class="hero-study-link" href="#form-study" data-launch-form>جرّب التشكيل <span aria-hidden="true">↓</span></a></div>
         </div>
         <div class="intro-foot"><span>السعودية</span><span lang="en" dir="ltr">ART &amp; OBJECTS</span></div>
       </div>
       <figure class="hero-stage" aria-label="مختارات من الأعمال" data-home-stage>
-        <img class="stage-photo" src="assets/images/clay.webp" width="1086" height="1448" alt="قوس نحتي بلون ترابي دافئ، تحيط انحناءته بفراغ مفتوح." fetchpriority="high" decoding="async">
+        <div class="stage-field" data-swipe-field>
+          <img class="stage-photo is-shown" data-hero-photo="arch" src="assets/images/clay.webp" width="1086" height="1448" alt="قوس نحتي بلون ترابي دافئ، تحيط انحناءته بفراغ مفتوح." fetchpriority="high" decoding="async">
+        </div>
         <div class="stage-top"><span class="stage-index" dir="ltr" lang="en">FIG. <span data-hero-count>01</span> / 03</span><span>دراسات بصرية</span></div>
         <figcaption class="stage-caption">
-          <div class="stage-name" aria-live="polite" aria-atomic="true"><small>من المجموعة</small><a href="collection.html#arch" data-hero-link><span data-hero-name>قوس</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M17 17 5 5m0 9V5h9"/></svg></a></div>
-          <div class="stage-controls" data-hero-controls hidden><button type="button" data-home-back aria-label="اعرض العمل السابق" title="العمل السابق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button><button type="button" data-home-next aria-label="اعرض العمل التالي" title="العمل التالي"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button></div>
+          <div class="stage-legend">
+            <div class="stage-name"><small data-hero-note>انحناء مفتوح</small><a href="collection.html#arch" data-hero-link><span data-hero-name>قوس</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M17 17 5 5m0 9V5h9"/></svg></a></div>
+            <div class="stage-controls" data-hero-controls hidden><button type="button" data-home-back aria-label="اعرض العمل السابق" title="العمل السابق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button><button type="button" data-home-next aria-label="اعرض العمل التالي" title="العمل التالي"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button></div>
+          </div>
+          <div class="stage-indexer" role="group" aria-label="اختر العمل المعروض" data-hero-indexer hidden>
+            <button type="button" data-work="arch" aria-pressed="true"><svg aria-hidden="true" viewBox="0 0 48 36"><path d="M4 31C5 16 10 8 18 4c6-3 7 4 10 9 3 5 14 7 16 18H32C30 21 25 17 20 17c-6 0-9 7-10 14Z"/></svg><span>قوس</span><small aria-hidden="true">01</small></button>
+            <button type="button" data-work="fold" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 48 36"><path d="M14 4c6 2 15 2 20 0 3 6-5 10-6 15-1 5 3 10 6 12-6 3-15 3-21 0 5-5 9-9 10-13 1-5-5-9-9-14Z"/><path d="M32 5c-3 7-11 9-14 14m12 2c-4 6-10 9-15 11"/></svg><span>طَيّة</span><small aria-hidden="true">02</small></button>
+            <button type="button" data-work="arcade" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 48 36"><path d="M5 31V18a19 19 0 0 1 38 0v13m-33 0V18a14 14 0 0 1 28 0v13m-27 0h5V18a8 8 0 0 1 16 0v13h6"/></svg><span>رِواق</span><small aria-hidden="true">03</small></button>
+          </div>
+          <span class="stage-sr" role="status" data-hero-status></span>
         </figcaption>
       </figure>
     </section>
@@ -62,9 +79,38 @@
       <p class="image-note">الصور دراسات توضيحية لاتجاه الاستوديو الفني.</p>
     </section>
 
-    <section class="workshop-feature" aria-labelledby="workshop-title">
+    <section class="lab-study" id="material-lab" data-material-lab aria-labelledby="lab-title">
+      <div class="lab-panel">
+        <div class="lab-aside">
+          <span class="lab-kicker">دراسة السطح / طَيّة</span>
+          <h2 id="lab-title">مختبر الملمس<span aria-hidden="true">.</span></h2>
+          <p class="lab-lead">من بعيد، يظهر الانحناء. ومن قرب، ترى خطوط الطباعة وهي تتبع المنحنى نفسه.</p>
+          <div class="lab-method" data-lab-controls hidden>
+            <div class="lab-readout"><label for="lab-range">مساحة لقطة الملمس</label><bdi class="lab-value" data-lab-value aria-hidden="true">٥٠٪</bdi></div>
+            <input class="lab-range" id="lab-range" type="range" min="0" max="100" step="1" value="50" dir="ltr" aria-describedby="lab-instruction">
+            <div class="lab-presets" role="group" aria-label="اختر طريقة العرض">
+              <button type="button" data-lab-preset="0" aria-pressed="false">القطعة كاملة</button>
+              <button type="button" data-lab-preset="50" aria-pressed="true">مقارنة</button>
+              <button type="button" data-lab-preset="100" aria-pressed="false">الملمس</button>
+            </div>
+            <p class="lab-instruction" id="lab-instruction">اسحب الفاصل على الصورة، أو استخدم الأسهم في شريط المقارنة.</p>
+          </div>
+          <a class="home-textlink" href="collection.html#fold">اكتشف طَيّة <span aria-hidden="true">←</span></a>
+        </div>
+        <div class="lab-frame">
+          <div class="lab-cleft" data-lab-stage>
+            <figure class="lab-shot lab-wide"><img src="assets/images/hero.webp" width="1086" height="1448" alt="شكل طَيّة الحلزوني كاملًا فوق قاعدة في ضوء جانبي." loading="lazy" decoding="async" draggable="false"><figcaption class="lab-chip">القطعة كاملة</figcaption></figure>
+            <figure class="lab-shot lab-detail"><img src="assets/images/detail.webp" width="1086" height="1448" alt="لقطة مقرّبة تكشف الخطوط الأفقية الدقيقة على السطح العاجي." loading="lazy" decoding="async" draggable="false"><figcaption class="lab-chip">لقطة الملمس</figcaption></figure>
+            <span class="lab-divider" hidden aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4m8-8 4 4-4 4"/></svg></span>
+          </div>
+          <div class="lab-frame-base"><span>طَيّة — دراسة بصرية</span><i aria-hidden="true"></i><span class="lab-en" lang="en" dir="ltr">SURFACE / 01</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form-study" class="workshop-feature" aria-labelledby="workshop-title">
       <div class="workshop-visual"><img src="assets/images/workshop.webp" width="1086" height="1448" alt="فوهة طابعة ثلاثية الأبعاد فوق سطح قطعة ملتفّة" loading="lazy" decoding="async"><span class="workshop-plate" lang="en" dir="ltr">PROCESS STUDY&nbsp; / &nbsp;01</span></div>
-      <div class="workshop-copy"><span class="section-eyebrow">من الورشة</span><h2 id="workshop-title">طبقة فوق<br> طبقة.</h2><p>من بعيد نرى كتلة واحدة. وحين نقترب، تظهر مسارات الخيط الذي بناها. هذا الأثر هو ما نبحث عنه في تصوير أعمال «عُمق».</p><a class="home-textlink" href="collection.html#fold">اقترب من الملمس <span aria-hidden="true">←</span></a></div>
+      <div class="workshop-copy"><span class="section-eyebrow">من الورشة</span><h2 id="workshop-title">طبقة فوق<br> طبقة.</h2><p>كيف يصبح مسار رفيع شكلًا مجسّمًا؟ أدر النموذج الحلزوني، ثم خفِّض ارتفاعه وابنِه من القاعدة طبقةً بعد طبقة.</p><a class="home-textlink" href="#material-lab">قارن ملمس القطعة <span aria-hidden="true">←</span></a></div>
     </section>
 
     <section class="signature-feature home-wrap" aria-labelledby="signature-title">
