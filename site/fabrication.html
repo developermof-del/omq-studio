@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6f1e8">
+<title>مختبر الطباعة | عُمق</title><meta name="description" content="استكشف انتقال الرسم إلى مجسّم في مختبر عُمق. عاين ملف STL محليًا، وأدره واقرأ أبعاده، أو نزّل عيّنة عُمق المدرّجة.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-primary.svg"><link rel="stylesheet" href="assets/common.css"><link rel="stylesheet" href="assets/fabrication.css">
+<script defer src="assets/common.js"></script><script defer src="assets/fabrication.js"></script>
+<link rel="stylesheet" href="assets/compass.css"><script defer src="assets/compass.js"></script></head>
+<body>
+<header data-header><a class="omq-skip" href="#main">تخطَّ إلى المحتوى</a><div class="omq-nav-shell"><a class="omq-word" href="index.html" aria-label="عُمق، الصفحة الرئيسية"><img src="assets/logo-primary.svg" width="79" height="48" alt="عُمق"><small dir="ltr" lang="en">OMQ<br>STUDIO</small></a><button class="omq-toggle" data-menu-toggle aria-controls="main-nav" aria-expanded="false"><span aria-hidden="true">☰</span> القائمة</button><nav class="omq-menu" id="main-nav" aria-label="التصفح الرئيسي"><a href="index.html">الرئيسية</a><a href="collection.html">الأعمال</a><a href="fabrication.html" aria-current="page">استوديو الطباعة</a><a href="brand.html">دليل الهوية</a><a href="platforms.html">المنصات</a></nav><div class="omq-head-tools"><a class="omq-saves-link" href="collection.html?view=saved" aria-label="الأعمال المحفوظة" title="الأعمال المحفوظة"><svg width="20" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-4-6 4z"/></svg><span data-favorite-badge hidden></span></a><button type="button" class="omq-search-trigger" aria-label="ابحث في الموقع" aria-haspopup="dialog" data-compass-open hidden><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span>بحث</span></button></div></div></header>
+<main id="main" class="fab">
+<nav class="fab-crumb fab-wrap" aria-label="مسار الصفحة"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><span aria-current="page">مختبر الطباعة</span></nav>
+<section class="fab-hero" aria-labelledby="fab-title">
+<div class="fab-hero-copy">
+<div class="fab-eyebrow"><span aria-hidden="true"></span>من دفتر الصانع</div>
+<h1 id="fab-title">مختبر<br> الطباعة<span>.</span></h1>
+<p>على الورق نقرأ الكلمة. وحين ترتفع الحروف عن السطح، يكتب الضوء ظلّها. هنا ننتقل من الرسم المسطّح إلى المجسّم.</p>
+<a class="fab-action" href="#viewer">افتح عارض المجسّمات <span aria-hidden="true">↓</span></a>
+</div>
+<figure class="fab-hero-plate"><div><img src="assets/plaque-preview.webp" width="1600" height="1000" alt="شعار عُمق بارز بحروف جرافيتية ونقطتين برتقاليتين فوق لوحة عاجية مستديرة الزوايا" fetchpriority="high" decoding="async"></div><figcaption><span>لوحة الشعار البارز · تصوّر ثلاثي الأبعاد</span><small dir="ltr" lang="en">FORM / 01</small></figcaption></figure>
+</section>
+<section id="viewer" class="fab-lab" aria-labelledby="inspector-title">
+<div class="fab-wrap">
+<div class="fab-lab-head"><div><div class="fab-eyebrow"><span aria-hidden="true"></span>أداة الاستوديو</div><h2 id="inspector-title">عاين المجسّم<span>.</span></h2></div>
+<p>ابدأ بعيّنة السطح، أو افتح ملفك لترى تفاصيله من زوايا مختلفة. يُقرأ ملفك داخل متصفّحك فقط.</p></div>
+<div class="fab-instrument">
+<div class="fab-view">
+<div class="fab-panel-head"><div><i aria-hidden="true"></i><span id="fab-name">عيّنة عُمق المدرّجة</span></div><small lang="en" dir="ltr">MODEL VIEW</small></div>
+<div class="fab-field" id="fab-field">
+<canvas id="fab-canvas" tabindex="0" aria-label="معاينة المجسّم: اسحب أفقيًا لتدويره أو استخدم مفاتيح الأسهم. استخدم مفاتيح زائد وناقص للتكبير والتصغير.">يمكنك قراءة أبعاد المجسّم في بطاقة القياس.</canvas>
+<div id="fab-fallback" hidden>المعاينة الرسومية غير متاحة على هذا الجهاز. يمكنك قراءة أبعاد الملف من بطاقة القياس.</div>
+<span class="fab-axis" aria-hidden="true" dir="ltr">X / Y / Z</span>
+</div>
+<div class="fab-view-note"><span aria-hidden="true">↔</span><span>اسحب أفقيًا للدوران. من لوحة المفاتيح: الأسهم للدوران والميل.</span></div>
+<div id="fab-controls" class="fab-controls" hidden>
+<label for="fab-yaw"><span>الدوران <b id="fab-yaw-v" dir="ltr">27°</b></span><input id="fab-yaw" type="range" min="0" max="360" step="1" value="27" dir="ltr"></label>
+<label for="fab-tilt"><span>الميل <b id="fab-tilt-v" dir="ltr">30°</b></span><input id="fab-tilt" type="range" min="-70" max="85" step="1" value="30" dir="ltr"></label>
+<label for="fab-zoom"><span>التكبير <b id="fab-zoom-v" dir="ltr">100%</b></span><input id="fab-zoom" type="range" min="50" max="190" step="5" value="100" dir="ltr"></label>
+<button id="fab-reset" type="button">أعِد ضبط المنظر</button>
+</div></div>
+<aside class="fab-side" aria-labelledby="fab-card-title">
+<span class="fab-mono" dir="ltr" lang="en">OBJECT DATA</span>
+<h3 id="fab-card-title">بطاقة القياس</h3>
+<div class="fab-size" aria-label="الأبعاد بالمليمتر"><div><small><b dir="ltr">X</b> العرض</small><strong id="fab-x">٤٠</strong></div><div><small><b dir="ltr">Y</b> العمق</small><strong id="fab-y">٢٤</strong></div><div><small><b dir="ltr">Z</b> الارتفاع</small><strong id="fab-z">٤</strong></div></div>
+<p class="fab-unit">الأبعاد بالمليمتر عند افتراض أن كل وحدة في ملف STL تساوي مليمترًا واحدًا.</p>
+<div class="fab-stat"><span>مثلثات السطح</span><b id="fab-faces">—</b></div>
+<div class="fab-load" id="fab-load" hidden>
+<button id="fab-pick" class="fab-action" type="button">افتح ملف STL من جهازك <span aria-hidden="true">↑</span></button><input id="fab-input" type="file" accept=".stl" hidden>
+<button id="fab-sample" class="fab-plain" type="button">اعرض عيّنة الاستوديو</button>
+<p>حتى ١٢ ميبيبايت و٨٠ ألف مثلث. لا يُرسل الملف أو يُحفظ في الموقع.</p>
+</div>
+<noscript><p>تحتاج معاينة ملفك إلى تفعيل JavaScript. يبقى ملف العيّنة أدناه متاحًا للتنزيل.</p></noscript>
+<p id="fab-status" class="fab-status" role="status" aria-live="polite"></p>
+</aside>
+</div></div>
+</section>
+<section id="print-files" class="fab-sample fab-wrap" aria-labelledby="fab-sample-title"><div class="fab-sample-copy"><div class="fab-eyebrow"><span aria-hidden="true"></span>عيّنة مفتوحة للتجربة</div><h2 id="fab-sample-title">عيّنة عُمق المدرّجة<span>.</span></h2><p>عيّنة تحمل توقيع عُمق وثلاث درجات بمناسيب مختلفة. دوّرها في العارض لتقرأ الحواف، ثم افتح ملف العيّنة في برنامج التقطيع لمقارنة المجسّم بمسارات الطباعة طبقةً طبقة.</p><a class="fab-action" href="assets/studio-sample.stl" download="OMQ_Studio_Step_Sample.stl">نزّل العيّنة المدرّجة <small dir="ltr">STL ↓</small></a></div><ol class="fab-steps"><li><div><strong>افتح العيّنة</strong><p>استورد الملف في برنامج التقطيع واختر ملف طابعتك والخيط المناسب.</p></div></li><li><div><strong>تحقّق من المقياس</strong><p>أبقِ القاعدة المسطّحة إلى أسفل، وتحقّق من الأبعاد: ٤٠ × ٢٤ × ٤ مم.</p></div></li><li><div><strong>راجع الطبقات</strong><p>انتقل إلى معاينة التقطيع ولاحظ كيف تنتهي كل درجة على ارتفاع مختلف.</p></div></li></ol></section>
+<section class="fab-return fab-wrap"><p>تبحث عن رسم الكلمة الأصلي؟</p><a href="brand.html">انتقل إلى دليل هوية عُمق <span aria-hidden="true">←</span></a></section>
+</main><footer data-footer class="omq-footer"><div class="omq-footer-inside"><div class="omq-foot-brand"><a href="index.html" aria-label="عُمق، الرئيسية"><img class="omq-foot-mark" src="assets/logo-reverse.svg" width="78" height="43" alt="عُمق"></a><p>فكرة تأخذ شكلًا.</p></div><nav aria-label="روابط التذييل"><a href="index.html">الرئيسية</a><a href="collection.html">الأعمال</a><a href="fabrication.html">استوديو الطباعة</a><a href="brand.html">دليل الهوية</a><a href="platforms.html">المنصات</a></nav></div><div class="omq-foot-base"><span>استوديو عُمق للفن والتصميم</span><span lang="en" dir="ltr">OMQ STUDIO · ART &amp; OBJECTS</span></div></footer></body></html>

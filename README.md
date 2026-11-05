@@ -2,12 +2,15 @@
 
 واجهة عربية من اليمين إلى اليسار تعرض الأعمال الفنية والقطع المطبوعة ثلاثية الأبعاد، وتجمع الأصول المعتمدة لهوية عُمق. الموقع ثابت: تُنشر محتويات **`site/`** مباشرةً، دون خادم أو حزم Node أو قاعدة بيانات. يقدّم GitHub Pages الموقع، وتبقى عمليات الشراء والدفع في متجرك الفعلي على سلة.
 
+[الموقع المنشور](https://developermof-del.github.io/omq-studio/) · [قارن طَيّة وقوس](https://developermof-del.github.io/omq-studio/collection.html?compare=fold,arch) · [استوديو الطباعة](https://developermof-del.github.io/omq-studio/fabrication.html)
+
 ## ماذا يوجد في الموقع؟
 
 | الوجهة | الملف أو الإعداد |
 | --- | --- |
 | مدخل الاستوديو وتصفّح الأعمال | [site/index.html](site/index.html) |
-| المعرض وتفاصيل كل قطعة | [site/collection.html](site/collection.html) |
+| معرض القطع، البحث، المحفوظات والمقارنة | [site/collection.html](site/collection.html) |
+| عارض STL المحلي وعيّنة عُمق المدرّجة للطباعة | [site/fabrication.html](site/fabrication.html) |
 | دليل اللون والخط والشعار وحركته وتنزيل الملفات | [site/brand.html](site/brand.html) |
 | معاينة الحساب والمحتوى لكل منصة | [site/platforms.html](site/platforms.html) |
 | التنزيل الكامل لحزمتَي الهوية والتواصل | [site/download.html](site/download.html) — يصل الزائر إليها من مكتبة التنزيلات |
@@ -64,3 +67,10 @@ bash scripts/publish-github.sh --public omq-studio
 - [اختيار مصدر النشر في GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - [استخدام GitHub Actions مع Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 - [واجهة GitHub لإنشاء موقع Pages](https://docs.github.com/en/rest/pages/pages#create-a-github-pages-site) · [إنشاء مستودع باستخدام gh](https://cli.github.com/manual/gh_repo_create)
+
+## تطوير أدوات الاستوديو
+
+- يحفظ المعرض معرّفات الأعمال المختارة على جهاز الزائر فقط. يمكن مشاركة معرّفي قطعتين أو ثلاث عبر معامل `compare`، أما رابط `?view=saved` فيعرض محفوظات الجهاز الحالي.
+- البحث العام مستقل عن الخادم؛ فهرس الوجهات والكلمات المرادفة في `site/assets/compass.js`. بعد تغيير وجهات التنقّل في `scripts/shell.py` أعد توليد الرأس والتذييل باستخدام `python3 scripts/shell.py`.
+- يقرأ عارض الطباعة ملفات STL النصية أو الثنائية محليًا (حتى 12 MiB و80,000 مثلث). الأبعاد المعروضة تفترض المليمتر. العيّنة العامة `site/assets/studio-sample.stl` بمقاس 40 × 24 × 4 مم؛ الملفات الشخصية التي يفتحها الزائر لا تُرسل ولا تُحفظ.
+- للتأكّد من المراجع والحزم بعد أي تعديل: `python3 scripts/check.py`.
