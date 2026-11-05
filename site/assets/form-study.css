@@ -1,0 +1,29 @@
+/* The live form is a deliberate alternative to the workshop photo. */
+.fs-launch{display:flex;align-items:center;gap:13px;min-height:46px;margin:0 0 12px;padding:5px 17px;border:1px solid #ff874e;border-radius:2px;background:#ff874e;color:#20262d;font:600 16px/1.5 'Plex Arabic',sans-serif;cursor:pointer}
+.fs-launch::before{content:"";width:13px;height:13px;border:1.5px solid currentColor;border-radius:50%;box-shadow:inset -3px -1px 0 currentColor}
+.fs-launch:hover,.fs-launch:focus-visible{background:#f6f1e8;border-color:#f6f1e8}
+.fs-launch[aria-expanded="true"]{background:transparent;border-color:#c9c3b9;color:#f6f1e8}
+.fs-view{direction:rtl;position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse at 45% 34%,#40464a,#292e32 54%,#202529 92%);color:#f6f1e8;display:grid;grid-template-rows:auto minmax(200px,1fr) auto;isolation:isolate}
+.fs-view[hidden]{display:none}
+.fs-open .workshop-visual{min-height:475px}
+.fs-open .workshop-plate{visibility:hidden}
+.fs-cap{padding:15px clamp(16px,2vw,29px) 0;display:flex;align-items:center;justify-content:space-between;gap:9px;line-height:1.5}
+.fs-cap strong{font-size:16px;font-weight:500;display:flex;align-items:center;gap:9px}
+.fs-cap strong::before{content:"";width:7px;height:7px;background:#ff8247;border-radius:2px}
+.fs-cap small{font:10px/1.2 'Plex Mono',monospace;letter-spacing:.08em;color:#d8d5cb}
+.fs-stage{min-height:0;min-width:0;position:relative}
+.fs-stage canvas{position:absolute;inset:0;display:block;width:100%;height:100%;touch-action:pan-y;cursor:grab}
+.fs-stage canvas:active{cursor:grabbing}
+.fs-stage canvas:focus-visible{outline-offset:-3px!important}
+.fs-note{position:absolute;inset-inline-start:clamp(16px,2vw,29px);bottom:5px;font-size:11px;line-height:1.4;color:#d4d1c9;pointer-events:none}
+.fs-palette{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;align-items:center;gap:clamp(12px,1.5vw,25px);margin:0 clamp(14px,2vw,29px) 13px;padding:10px 0 0;border-top:1px solid #626464}
+.fs-range span{display:flex;align-items:center;justify-content:space-between;gap:5px;font-size:12px;color:#e3dfd6;line-height:1.6}
+.fs-range b{font:11px/1 'Plex Mono',monospace;color:#ffb38f;white-space:nowrap}
+.fs-range input{width:100%;height:30px;padding:0;margin:0;display:block;direction:ltr;accent-color:#ff935d;cursor:pointer}
+.fs-build{min-height:42px;font-size:14px;font-weight:500;padding:3px 12px;border:1px solid #c6c2b8;border-radius:2px;background:transparent;color:#fff;line-height:1.4}
+.fs-build:hover,.fs-build:focus-visible{background:#f6f1e8;color:#20262d}
+@media(max-width:920px){.fs-palette{grid-template-columns:1fr 1fr;gap:0 19px}.fs-build{grid-column:1/-1;justify-self:start;margin-top:3px}.fs-open .workshop-visual{min-height:465px}}
+@media(max-width:700px){.fs-open .workshop-visual{height:455px;min-height:455px}.fs-cap{padding-top:12px}}
+@media print{.fs-view,.fs-launch{display:none!important}.fs-open .workshop-visual{min-height:0}.fs-open .workshop-plate{visibility:visible}}
+
+.fs-tray{display:flex;align-items:center;gap:9px}.fs-close{display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #747772;border-radius:50%;background:transparent;color:#f6f1e8;font:400 22px/1 sans-serif;cursor:pointer}.fs-close:hover,.fs-close:focus-visible{background:#f6f1e8;color:#20262d}

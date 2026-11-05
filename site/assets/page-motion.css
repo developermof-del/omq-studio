@@ -1,0 +1,30 @@
+/* Scroll cues and the in-place screening of the studio signature. */
+.omq-read-line{position:fixed;z-index:40;inset:0 0 auto;height:3px;pointer-events:none;background:var(--orange,#ff6b2c);transform:scaleX(0);transform-origin:right center;contain:paint}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes omq-page-arrive { from {opacity:.68;transform:translateY(14px)} to {opacity:1;transform:none} }
+  .omq-home .pm-enter:not(:focus-within):not(:focus-visible){animation:omq-page-arrive .65s cubic-bezier(.19,.72,.19,1) backwards;animation-delay:var(--pm-delay,0ms)}
+  .omq-home .work-item .work-arrow{transition:transform .23s cubic-bezier(.2,.7,.3,1)}
+  .omq-home .work-item:focus-visible .work-arrow{transform:translate(-3px,-3px)}
+  @media (hover:hover){.omq-home .work-item:hover .work-arrow{transform:translate(-3px,-3px)}}
+}
+.omq-home .work-info{position:relative}
+.omq-home .work-info:after{content:"";position:absolute;inset:auto 0 -1px;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:right;transition:transform .26s ease}
+.omq-home .work-item:focus-visible .work-info:after{transform:scaleX(1)}
+@media (hover:hover){.omq-home .work-item:hover .work-info:after{transform:scaleX(1)}}
+.omq-home .work-item:focus-visible .work-image img{transform:scale(1.025)}
+.sig-plate.pm-stage{position:relative;isolation:isolate;overflow:hidden}
+.pm-stage > span{z-index:2}
+.pm-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:0;background:var(--ivory)}
+.pm-stage.pm-has-frame .pm-film{opacity:1}
+.pm-stage.pm-has-frame > img{visibility:hidden}
+.pm-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-block-start:14px;color:var(--ink)}
+.pm-play{display:inline-flex;align-items:center;gap:9px;min-height:44px;background:var(--ink);color:var(--ivory);border:1px solid var(--ink);border-radius:2px;padding:4px 13px;font:500 14px/1.4 'Plex Arabic',sans-serif;cursor:pointer}
+.pm-play:hover,.pm-play:focus-visible{border-color:var(--ink);background:var(--ivory);color:var(--ink)}
+.pm-play svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pm-play .pm-pauseicon,.pm-play[data-playing] .pm-playicon{display:none}
+.pm-play[data-playing] .pm-pauseicon{display:block}
+.pm-duration{font:500 12px/1.5 'Plex Arabic',sans-serif;color:#4d4942}
+.omq-home .pm-fallback{text-decoration:underline;text-underline-offset:.2em;font-size:14px;font-weight:600}
+.pm-offscreen{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(prefers-reduced-motion:reduce){.omq-read-line{display:none}.omq-home .work-item:is(:hover,:focus-visible) .work-image img{transform:none}.omq-home .work-info:after{transition:none}}
+@media print{.omq-read-line,.pm-controls,.pm-film{display:none!important}.pm-stage.pm-has-frame > img{visibility:visible}}
